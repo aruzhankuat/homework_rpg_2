@@ -12,7 +12,7 @@ public abstract class Enemy implements Cloneable {
     public abstract Enemy clone();
 
     public void status() {
-        System.out.println("--- " + name + " ---");
+        System.out.println(" name: " + name );
         System.out.println("HP: " + health);
         if (ability != null) ability.execute();
         if (loot != null) loot.generate();
